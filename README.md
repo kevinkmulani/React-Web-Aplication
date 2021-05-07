@@ -68,3 +68,27 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+// React Component Type...
+1)fumction base Component
+Ex.
+    function FirstComponent(){
+        return(
+            <div>
+                <h1>Hello From First Component.</h1>
+                <SecondComponent username="KevinMulani" city="Surat"/>
+            </div>
+        );
+    }
+
+2)class base componet
+Ex.
+    class FirstComponent extends React.Component{
+        render(){
+            <div>
+                <h1>Hello From First Component.</h1>
+                <SecondComponent username="KevinMulani" city="Surat"/>
+            </div>
+        }
+    }    
