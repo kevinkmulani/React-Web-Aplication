@@ -1,17 +1,45 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import ReactDom from 'react-dom';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+function oddeven(number){
+    if( number % 2 == 0){
+        return "Number is even: " + number;
+    }
+    else{
+        return "Number is odd: " + number;
+    }
+}
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+function getTag(test){
+    if(test == 2){
+        return <h3>Number is 2</h3>
+    }
+    else{
+        return <h3>Number is not 2.</h3>
+    }
+}
+
+function loginform(){
+    return (
+        <form method="POST">
+            <label>Login From For Master User</label><br/>
+            Email:<input type="text" name="email"/><br/>
+            Password:<input type="password" name="password"/><br/>
+            <button type="submit" name="btnSubmit">Login</button>
+        </form>
+    )
+}
+
+const data = <div>{oddeven(2)}</div>
+let googlelink = "https://www.google.com"
+const link = <a href={googlelink} target="_blank">Google</a>
+
+ReactDom.render(
+    <div>
+        {link}<br/>
+        {data}<br/>
+        {getTag(2)}<br/>
+        {loginform()}<br/>
+    </div>,
+    document.getElementById('root')
+)
