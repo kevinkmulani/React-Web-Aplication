@@ -1,11 +1,9 @@
-import React from 'react';
-import Counter from './component/Counter';
+import React from 'react'
 import Mount from './component/Mount'
 
 function App(props){
     return(
         <div>
-            <Counter></Counter>
             <Mount></Mount>
         </div>
     )   
