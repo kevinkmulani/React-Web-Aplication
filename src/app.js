@@ -1,14 +1,13 @@
-import React from 'react'
-import FirstComponent from './component/FirstComponent';
-import LoginForm from './component/LoginForm'
+import React from 'react';
+import Counter from './component/Counter';
+import Mount from './component/Mount'
 
-function App(){
+function App(props){
     return(
         <div>
-            <FirstComponent/>
-            <LoginForm email="mail@gmail.com" password="Kevin Mulani"/>
+            <Counter></Counter>
+            <Mount></Mount>
         </div>
-    );
+    )   
 }
-
 export default App
