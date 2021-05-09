@@ -1,10 +1,10 @@
 import React from 'react'
-import Event from './component/Event'
+import Hooks from './component/Hooks'
 
 function App(props){
     return(
         <div>
-            <Event/>
+            <Hooks/>
         </div>
     )   
 }
