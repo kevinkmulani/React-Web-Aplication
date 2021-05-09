@@ -1,10 +1,10 @@
 import React from 'react'
-import Mount from './component/Mount'
+import Event from './component/Event'
 
 function App(props){
     return(
         <div>
-            <Mount></Mount>
+            <Event/>
         </div>
     )   
 }
